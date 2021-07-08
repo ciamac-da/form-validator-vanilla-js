@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <script defer src="./index.js" charset="utf-8"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>My HTML Page</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -19,7 +22,24 @@
         <input type="text" id="username" name="username" placeholder="Enter Username" value="">
         <small>Error Message</small>
       </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter Email" value="">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Pasword" value="">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" value="">
+        <small>Error Message</small>
+      </div>
+      <button>Submit</button>
     </form>
+
   </div>
 </body>
 
