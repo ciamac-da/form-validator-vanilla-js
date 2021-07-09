@@ -46,7 +46,6 @@ h2 {
 display: block;
 margin-top: 10px;
 color: #000;
-font-weight: bolder
 }
 
 .form-control input {
@@ -72,7 +71,6 @@ border-color:var(--success-color)
 
 .form-control small {
   color:var(--error-color);
-  position: absolute;
   bottom: 0;
   left: 0;
   visibility: hidden;
@@ -96,8 +94,9 @@ border-color:var(--success-color)
 }
 
 .form button:hover{
-  background-color: #73c0d1;
-  border: 2px solid #73c0d1;
+  background-color: #5899c2;
+  border: 2px solid #5899c2;
+  font-weight: bolder;
   transition: .5s
 
 }
