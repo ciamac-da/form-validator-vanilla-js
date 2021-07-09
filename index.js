@@ -19,6 +19,12 @@ const showSuccess = (input) => {
 
 }
 
+// Email Validate
+const isValideEmail = (email) => {
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(String(email).toLowerCase());
+}
+
 // Event listener
 form.addEventListener("submit", (e)=> {
   e.preventDefault();
@@ -31,6 +37,8 @@ form.addEventListener("submit", (e)=> {
 
   if (email.value === '') {
     showError(email, "Email is required")
+  } else if(!isValideEmail(email.value)) {
+    showError(email, "Email is not valid")
   } else {
     showSuccess(email)
   }
